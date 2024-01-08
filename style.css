@@ -1,0 +1,89 @@
+body{
+    font-family: 'Quantico', sans-serif; 
+    background-color: #f8f7f4;
+}
+
+.contain{
+    margin-left: 8rem;
+    margin-right: 4rem;
+    overflow: hidden;
+}
+
+
+.sidebar{
+    height: 100%;
+    border-radius: 0 40px 40px 0;
+    width: 4rem;
+}
+
+.nav-links{
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-links:hover{
+    transform: translateX(10px);
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+span{
+    color: #850205;
+}
+
+.row{
+    margin:0;
+}
+
+.n-bg{
+    background: url(/img/news-header-bg.png) no-repeat center center;   
+    background-size: 65%;
+}
+
+
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%); 
+}
+
+.thumbs{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.thumb:hover {
+    transform: translateY(-15px);
+    filter: grayscale(0%);
+}
+
+.thumb:hover .thumbs{
+    transform: translateY(20px);
+}
+
+.result {
+    background: linear-gradient(to right, #850205, #bb0f0f);
+}
+
+
+
+
+
+@media screen and (max-width: 767.5px){
+    .contain{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row{
+        margin: 0 20px;
+    }
+
+    .about-form{
+        padding-right: 40px !important;
+    }
+}
