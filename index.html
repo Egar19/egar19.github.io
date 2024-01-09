@@ -128,16 +128,19 @@
                     <div class="card-body">
                         <h5 class="card-title mb-4">LDL Season 6 | Day 3</h5>
                         <div class="row">
-                            <h5 class="card-text col-sm">Load Pokeman</h5>
                             <div class="col-sm">
-                                <h5 class="card-text col">2 : 0</h5>
-                                <h5 class="card-text col text-bg-success rounded badge d-none d-sm-block">Win</h5>                               
+                                <h5 class="card-text">Load Pokemon</h5>
                             </div>
-                            <h5 class="card-text col-sm">Veron</h5>
-                            <h5 class="card-text col text-bg-success rounded badge d-block d-sm-none">Win</h5>
+                            <div class="col-sm">
+                                <h5 class="card-text">2 : 0</h5>
+                                <h5 class="card-text bg-success rounded badge d-none d-sm-inline-block">Win</h5>
+                            </div>
+                            <div class="col-sm">
+                                <h5 class="card-text">Veron</h5>
+                                <h5 class="card-text bg-success rounded badge d-inline-block d-sm-none mx-auto">Win</h5>
+                            </div>
                         </div>
-                        
-                    </div>
+                    </div>                    
                 </div>
                 <div class="card border-dark m-3 col-lg-5 result text-light" data-aos="fade-left">
                     <div class="card-header row">
@@ -147,16 +150,19 @@
                     <div class="card-body">
                         <h5 class="card-title mb-4">LDL Season 6 | Day 2</h5>
                         <div class="row">
-                            <h5 class="card-text col-sm">Load Pokeman</h5>
                             <div class="col-sm">
-                                <h5 class="card-text col">1 : 2</h5>
-                                <h5 class="card-text col text-bg-danger rounded badge d-none d-sm-block">Lose</h5>                               
+                                <h5 class="card-text">Load Pokemon</h5>
                             </div>
-                            <h5 class="card-text col-sm">Btx</h5>
-                            <h5 class="card-text col text-bg-danger rounded badge d-block d-sm-none">Lose</h5>
+                            <div class="col-sm">
+                                <h5 class="card-text">1 : 2</h5>
+                                <h5 class="card-text bg-danger rounded badge d-none d-sm-inline-block">Lose</h5>
+                            </div>
+                            <div class="col-sm">
+                                <h5 class="card-text">Btx</h5>
+                                <h5 class="card-text bg-danger rounded badge d-inline-block d-sm-none mx-auto">Lose</h5>
+                            </div>
                         </div>
-                        
-                    </div>
+                    </div>                    
                 </div>
                 <div class="card border-dark m-3 col-lg-5 result text-light" data-aos="fade-right">
                     <div class="card-header row">
@@ -166,15 +172,18 @@
                     <div class="card-body">
                         <h5 class="card-title mb-4">LDL Season 6 | Day 1</h5>
                         <div class="row">
-                            <h5 class="card-text col-sm">Load Pokeman</h5>
                             <div class="col-sm">
-                                <h5 class="card-text col">2 : 0</h5>
-                                <h5 class="card-text col text-bg-success rounded badge d-none d-sm-block">Win</h5>                               
+                                <h5 class="card-text">Load Pokemon</h5>
                             </div>
-                            <h5 class="card-text col-sm">Unitas</h5>
-                            <h5 class="card-text col text-bg-success rounded badge d-block d-sm-none">Win</h5>
+                            <div class="col-sm">
+                                <h5 class="card-text">2 : 0</h5>
+                                <h5 class="card-text bg-success rounded badge d-none d-sm-inline-block">Win</h5>
+                            </div>
+                            <div class="col-sm text-center"> 
+                                <h5 class="card-text">Unitas</h5>
+                                <h5 class="card-text bg-success rounded badge d-inline-block d-sm-none mx-auto">Win</h5>
+                            </div>
                         </div>
-                        
                     </div>
                 </div>
                 <div class="card border-dark m-3 col-lg-5 result text-light" data-aos="fade-left">
@@ -226,6 +235,23 @@
                     </div>
                 </div>
             </div>
+            <div class="row gy-5">
+                <div class="col n-bg">
+                    <h1 class="fw-bold">SPONSORS</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="logos col-10">
+                    <div class="logos-slide">
+                        <img class="rounded-circle shadow" src="/img/somi.jpg"/>
+                        <img class="rounded-circle shadow" src="/img/teh-gelas.png"/>
+                        <img class="rounded-circle shadow" src="/img/st.jpg"/>
+                        <img class="rounded-circle shadow" src="/img/somi.jpg"/>
+                        <img class="rounded-circle shadow" src="/img/teh-gelas.png"/>
+                        <img class="rounded-circle shadow" src="/img/st.jpg"/>
+                    </div>
+                </div>
+            </div>
         </div> 
     </main>
     
@@ -247,6 +273,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        let copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
     </script>
     <script src="main.js"></script>
     <script src="/dist/js/bootstrap.bundle.min.js"></script>

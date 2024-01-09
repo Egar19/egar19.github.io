@@ -1,6 +1,7 @@
 body{
     font-family: 'Quantico', sans-serif; 
     background-color: #f8f7f4;
+    box-sizing: border-box;
 }
 
 .contain{
@@ -68,6 +69,85 @@ span{
     background: linear-gradient(to right, #850205, #bb0f0f);
 }
 
+.gp{
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+/* SLIDER */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+        }
+    to {
+        transform: translateX(-100%);
+        }
+    }
+
+.logos {
+    overflow: hidden;
+    padding: 40px 0;
+    background: #f8f7f4;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f8f7f4);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f8f7f4);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 120px;
+    margin: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -84,4 +164,13 @@ span{
     .about-form{
         padding-right: 40px !important;
     }
+    .logos:before,
+    .logos:after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
 }

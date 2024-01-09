@@ -76,41 +76,62 @@
                     <h1 class="fw-bold text-center">ABOUT</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col result text-light rounded-4 p-4">
-                    <h4 class="my-4">
-                        🎮 LoadEsport: Crafting Legends in the Load Development League! 🚀
-                    </h4>
-                    <p>
-                        Welcome to the world of LoadEsport, where passion, strategy, and skill converge in perfect harmony. We are a gaming team that plays not just for victory but to create legends in the online realm. Embrace LoadEsport - a pioneer in the esports landscape!
-                    </p>
-                    <h4 class="my-4">
-                        🔥 Diverse Teams, One Name: LoadEsport 🔥
-                    </h4>
-                    <p>
-                        We take pride in harboring multiple formidable teams competing in the realms of Mobile Legends, PUBG Mobile, and Free Fire. Each player within our ranks is a pioneer in their playstyle, proving that true strength lies in teamwork. LoadEsport is not just a team; it's a family united by the spirit of competition.
-                    </p>
-                    <h4 class="my-4">
-                        🏆 Load Development League: The Grand Championship Event! 🏆
-                    </h4>
-                    <p>
-                        We proudly present the Load Development League, a mega-tournament that will shake the foundations of the esports world! In this league, the best teams from all corners will clash in skill and tactical brilliance to claim the championship title. Load Development League is not merely a tournament; it's a stage for young talents to shine and flourish.
-                    </p>
-                    <h4 class="my-4">
-                        🚀 Get to Know the Teams, Witness the Tenacity! 🚀
-                    </h4>
-                    <p>
-                        Each team in LoadEsport has its own unique identity. With high-caliber players and well-thought-out strategies, they are ready to rock the esports stage. Prepare to witness tactical gameplay and epic moments that will leave a lasting impression on the audience.
-                    </p>
-                    <h4 class="my-4">
-                        🌐 Follow Our Journey on Social Media 🌐
-                    </h4>
-                    <p>
-                        Stay tuned on our social media platforms for the latest updates, exclusive content, and opportunities to engage directly with the LoadEsport community. Join us in making esports history!
-                    </p>
-                    <h5 class="text-center mt-5">
-                        LoadEsport - Where Legends are Born, Not Made! 🏆✨
-                    </h5>
+            <div class="container text-light">
+                <div class="row gp justify-content-center">
+                    <div class="col-lg-5 result rounded p-3" data-aos="fade-right">
+                        <h4>
+                            🎮 LoadEsport: Crafting Legends in the Load Development League! 🚀
+                        </h4>
+                        <p>
+                            Welcome to the world of LoadEsport, where passion, strategy, and skill converge in perfect harmony. We are a gaming team that plays not just for victory but to create legends in the online realm. Embrace LoadEsport - a pioneer in the esports landscape!
+                        </p>
+                    </div>
+                    <div class="col-lg-6 result rounded p-3" data-aos="fade-left">
+                        <h4>
+                            🔥 Diverse Teams, One Name: LoadEsport 🔥
+                        </h4>
+                        <p>
+                            We take pride in harboring multiple formidable teams competing in the realms of Mobile Legends, PUBG Mobile, and Free Fire. Each player within our ranks is a pioneer in their playstyle, proving that true strength lies in teamwork. LoadEsport is not just a team; it's a family united by the spirit of competition.
+                        </p>
+                    </div>
+                    <div class="col-lg-7 result rounded p-3" data-aos="fade-right">
+                        <h4>
+                            🏆 Load Development League: The Grand Championship Event! 🏆
+                        </h4>
+                        <p>
+                            We proudly present the Load Development League, a mega-tournament that will shake the foundations of the esports world! In this league, the best teams from all corners will clash in skill and tactical brilliance to claim the championship title. Load Development League is not merely a tournament; it's a stage for young talents to shine and flourish.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 result rounded p-3" data-aos="fade-left">
+                        <h4>
+                            🚀 Get to Know the Teams, Witness the Tenacity! 🚀
+                        </h4>
+                        <p>
+                            Each team in LoadEsport has its own unique identity. With high-caliber players and well-thought-out strategies, they are ready to rock the esports stage. Prepare to witness tactical gameplay and epic moments that will leave a lasting impression on the audience.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 result rounded p-3" data-aos="fade-up">
+                        <h5 class="text-center">
+                            LoadEsport - Where Legends are Born, Not Made! 🏆✨
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5 mb-3">
+                <div class="col n-bg">
+                    <h1 class="fw-bold text-center">OUR DOCUMENTATION</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="logos col-11">
+                    <div class="logos-slide">
+                        <img class="rounded shadow" src="/img/t1.png" />
+                        <img class="rounded shadow" src="./img/t2.jpg" />
+                        <img class="rounded shadow" src="/img/t3.png" />
+                        <img class="rounded shadow" src="/img/t1.png" />
+                        <img class="rounded shadow" src="./img/t2.jpg" />
+                        <img class="rounded shadow" src="/img/t3.png" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,6 +155,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        let copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
     </script>
     <script src="main.js"></script>
     <script src="/dist/js/bootstrap.bundle.min.js"></script>
