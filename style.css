@@ -1,0 +1,196 @@
+body{
+    font-family: 'Quantico', sans-serif; 
+    background-color: #f8f7f4;
+    box-sizing: border-box;
+}
+
+.contain{
+    margin-left: 8rem;
+    margin-right: 4rem;
+    overflow: hidden;
+}
+
+
+.sidebar{
+    height: 100%;
+    border-radius: 0 40px 40px 0;
+    width: 4rem;
+}
+
+.nav-links{
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-links:hover{
+    transform: translateX(10px);
+    color: black;
+}
+
+a{
+    color: black;
+}
+
+span{
+    color: #850205;
+}
+
+.row{
+    margin:0;
+}
+
+.n-bg{
+    background: url(/img/news-header-bg.png) no-repeat center center;   
+    background-size: 65%;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%); 
+}
+
+.thumbs{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.thumb:hover {
+    transform: translateY(-15px);
+    filter: grayscale(0%);
+}
+
+.thumb:hover .thumbs{
+    transform: translateY(20px);
+}
+
+.result {
+    background: linear-gradient(to right, #850205, #bb0f0f);
+}
+
+.gp{
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+/* SLIDER */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+        }
+    to {
+        transform: translateX(-100%);
+        }
+    }
+
+.logos {
+    overflow: hidden;
+    padding: 40px 0;
+    background: #f8f7f4;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f8f7f4);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f8f7f4);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 120px;
+    margin: 0 20px;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    }
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/img/banner.jpeg') center;
+    filter: blur(5px) brightness(0.7); 
+    z-index: -1;
+}
+
+.fw-bold{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767.5px){
+    .contain{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row{
+        margin: 0 20px;
+    }
+
+    .about-form{
+        padding-right: 40px !important;
+    }
+    .logos:before,
+    .logos:after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+}
